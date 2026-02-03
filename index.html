@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Photo Gallery Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Grid Container -->
+    <div class="grid-container">
+        <!-- Header (spans all columns) -->
+        <header class="site-header">
+            <h1>My Photo & Design Portfolio</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Sidebar (1st column) -->
+        <aside class="content-sidebar">
+            <h3>Skills & Tools</h3>
+            <ul>
+                <li>Digital Photography</li>
+                <li>Adobe Photoshop</li>
+                <li>CSS Grid Layout</li>
+                <li>Responsive Design</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content (2nd-3rd columns) -->
+        <main class="main-content">
+            <section id="about">
+                <h2>About This Portfolio</h2>
+                <p>This page uses CSS Grid to organize content into a clean, responsive layout. Below you’ll find a curated gallery of my best work, with a featured piece that spans across all columns to highlight its importance.</p>
+            </section>
+
+            <!-- Featured Element (spans all columns) -->
+            <section class="featured-photo">
+                <h2>Featured Work: Coastal Landscape</h2>
+                <div class="featured-photo-box">
+                    <img src="C:\Users\Acer\OneDrive\画像\Acer\coastal-landscape-view-stockcake.webp" alt="Wide coastal landscape photo with sunset skies" loading="lazy">
+                </div>
+                <p>This award-winning shot captures the interplay of light and water, edited with custom color grading techniques.</p>
+            </section>
+
+            <!-- Photo Gallery (3 equal columns) -->
+            <section id="gallery" class="photo-gallery">
+                <h2>Portfolio Gallery</h2>
+                <!-- Project 1 Photo -->
+                <div class="gallery-card">
+                    <div class="photo-box">
+                        <img src="C:\Users\Acer\OneDrive\画像\Acer\sunrise-from-wetterhorn-peak-colorado-rocky-mountains-usa.jpg" alt="Mountain peak at sunrise" loading="lazy">
+                    </div>
+                    <h3>Alpine Dawn</h3>
+                    <p>Shot at 12,000ft elevation with a full-frame camera.</p>
+                </div>
+
+                <!-- Project 2 Photo -->
+                <div class="gallery-card">
+                    <div class="photo-box">
+                        <img src="C:\Users\Acer\OneDrive\画像\Acer\nick-sweetman-bees-garage.jpg" alt="Urban street art mural" loading="lazy">
+                    </div>
+                    <h3>City Canvas</h3>
+                    <p>Documentary-style photography of street art culture.</p>
+                </div>
+
+                <!-- Project 3 Photo -->
+                <div class="gallery-card">
+                    <div class="photo-box">
+                        <img src="C:\Users\Acer\OneDrive\画像\Acer\40070a_5c542bbe26674317880ea5b9631b896d~mv2.jpg" alt="Macro shot of tropical flower" loading="lazy">
+                    </div>
+                    <h3>Botanical Detail</h3>
+                    <p>Extreme close-up with specialized macro lens equipment.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer (spans all columns) -->
+        <footer class="site-footer">
+            <p>&copy; 2026 My Portfolio | Contact: hello@myportfolio.example | All photos are original work</p>
+        </footer>
+    </div>
+</body>
+</html>
